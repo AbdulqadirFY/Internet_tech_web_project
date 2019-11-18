@@ -143,7 +143,7 @@ margin-left: 70px;
 margin-right: 50px;
 float: left;
 width: 25%;
-height: 350px;
+height: 400px;
 background-color: #0f0;
 }
 .col1:hover{ /* hover: makes the blocks change color when touched*/
@@ -159,7 +159,7 @@ margin-left: 52px;
 margin-right: 50px;
 float: left;
 width: 25%;
-height: 350px;
+height: 400px;
 background-color: #bfbfbf;
 }
 .col2:hover{ /* hover: makes the blocks change color when touched*/
@@ -175,7 +175,7 @@ margin-left: 50px;
 margin-right: 70px;
 float: right;
 width: 25%;
-height: 350px;
+height: 400px;
 background-color: #0f0;
 }
 .col3:hover{ /* hover: makes the blocks change color when touched*/
