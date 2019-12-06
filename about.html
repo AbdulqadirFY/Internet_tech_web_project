@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -8,7 +7,10 @@
 
   </head>
   <body>
-    <div class="navbar"> <!--logo and nav bar div-->
+
+
+
+    <div class="navbar"> 
       <div class="container1">
         <div class="logo_div">
             <img class="logo" src="images/logo.png">
@@ -26,45 +28,41 @@
           </ul>
         </div>
       </div>
-    </div><!--logo and nav bar div-->
+    </div>
     <br>
     <a name="services"></a>
-    <div><!--quick facts div-->
+    <div>
       <div class="container2" style="background-color: #f4ff00">
         <h1>SERVICES</h1>
 
         <p style="font-size:16px;">WE PROVIDE INDUSTRY TREND SERVICES TO OUR CLIENTS GLOBALLY WITH THE FOLLOWING<br></p>
 
       </div>
-    </div><!--quick facts div-->
+    </div>
 
-
-      <div><!--news div-->
+      <div>
         <div class="container3">
 
           <div class="col11">
             <h2>***<br>Antivirus Softwares</h2>
 
               <p>Our computer programs used to prevent, detect, and remove malware are among the world's best. Antivirus softwares will be tailored to detect and remove computer viruses in your organisation.</p>
-
           </div>
+
           <div class="col21">
             <h2>***<br>Vulnerability Analysis</h2>
             <p>We conduct in-depth analysis of your systems, to identify weaknesses and lack of redundancy, and determine mitigations or corrective actions that can be designed or implemented to reduce the cyberattack</p>
-
          </div>
+
           <div class="col31">
             <h2>***<br>Penetration Testing</h2>
             <p>Our professional Ethical hackers perform authorized simulated cyberattack on your computer systems, to evaluate the security of the system using similar attacks used by the bad guys or hackers.</p>
           </div>
 
-
          <div class="col41">
            <h2>***<br>Reverse Engineering</h2>
            <p>When there is an attacked or suspected attack on your systems, we evaluate the attack to understand the source, damage and possible unintended actions by your organisation which led to the attack.</p>
          </div>
-
-
 
 
        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -76,7 +74,8 @@
             <p class="text">
               <span style="font-size:15px; color:black;"><b>Mr. VICTOR ORBAN</b></span><br>Founder, CEO of TrueSecure.
             </p>
-          </div></div>
+          </div>
+        </div>
 
           <div class="cont2" style="float:left;">
             <img src="images/man4.png" alt="cfo" class="image">
@@ -85,7 +84,8 @@
                 <span style="font-size:15px; color:black;"><b>BENJAMIN FLOW</b></span><br>Co-founder, CFO of TrueSecure.
               </p>
 
-            </div></div>
+            </div>
+          </div>
 
             <div class="cont3" style="float:left;">
               <img src="images/24.png" alt="cfo" class="image">
@@ -94,7 +94,8 @@
                   <span style="font-size:15px; color:black;"><b>Egnr. Natali Ben</b></span><br>Head of technical research, TrueSecure.
                 </p>
 
-              </div></div>
+              </div>
+            </div>
 
               <div class="cont4" style="float:left;">
                 <img src="images/hacker.png" alt="cfo" class="image">
@@ -104,32 +105,101 @@
                   </p>
 
                 </div>
-        </div>
+              </div>
+      </div>
 
-      </div><!--news div-->
+
       <a name="sayhi"></a>
-      <div class="message"><!-- Say Hi -->
+      <div class="message">
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         <h2 style="text-align:center; font-size:35px">SAY Hi</h2>
           <div><br>
-              <form class="form">
-              Name*
+              <form class="form" name="form1" onclick="return validateForm()">
+              <label style="font-size: 20px;font-style: oblique; "> Name *</label>
               <br>
-              <input type="text" name="name" ><br><br>
-              Email*
+              <input type="text" name="nem" ><br><br>
+              <label style="font-size: 20px;font-style: oblique; "> Email *</label>
               <br>
               <input type="email" name="email" ><br><br>
-              Organisation*
+              <label style="font-size: 20px;font-style: oblique; "> Country *</label>
               <br>
-              <input type="text" name="Company" ><br><br>
-              Your Message
+                <select id="country" name="country" style="width: 73%;">
+                  <option value="Australia"> </option>
+                  <option value="Australia">Australia</option>
+                  <option value="Canada">Canada</option>
+                  <option value="USA">USA</option>
+                  <option value="Hungary">Hungary</option>
+                  <option value="Russia">Russia</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Laos">Laos</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Finland">Finland</option>
+                  <option value="Croatia">Croatia</option>
+                </select><br><br>
+              <label style="font-size: 20px;font-style: oblique; ">Your Message</label>
               <br>
-              <textarea name="message" rows="8" cols="40"></textarea><br>
-              <br>
-              <input type="button" name="submit" value="SUBMIT" onclick="fun"><br><br><br>
-            </form>
-        </div>
-      </div><!-- Say Hi -->
+              <textarea name="message" rows="8" cols="40"></textarea><br><br>
 
+              <input id="myBtn" style="font-size: 20px; font-style: bold;"
+              type="button" value="SUBMIT" onclick="sub()">
+              <br><br><br>
+            </form>
+
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="clc()">&times;</span>
+                <div class="modal-header">
+                  <h2 id="status"> </h2>
+                </div>
+                <div class="modal-body">
+                  <p id="data"> </p>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+
+
+    <script language="JAVASCRIPT">
+
+      function validateForm()  {
+        var name = document.forms["form1"]["nem"].value;
+        var email = document.forms["form1"]["email"].value;
+        var message = document.forms["form1"]["message"].value;
+
+        if (name == "" || email == "" || message == ""){
+
+          document.getElementById("status").innerHTML=("OOps!!! - Somthing went wrong");
+          document.getElementById("data").innerHTML=
+          ("Please check: Name, Email and Message fields must not be EMPTY.\nTry Again");
+        }
+        else{
+          document.getElementById("status").innerHTML=("SUCCESS");
+          document.getElementById("data").innerHTML=
+          ("Thank you "+name+ ", your message has been successfully sent, our staff will get back to you via email.");
+
+        }
+      }
+
+
+      function sub()  {
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+
+        modal.style.display ="block";
+      }
+
+      function clc()  {
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+
+        modal.style.display ="none";
+      }
+
+    </script>
   </body>
 </html>

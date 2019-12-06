@@ -374,12 +374,76 @@
 
 /* ------------------------------------------------------------------------------------- */
 
-.message{
 
+.form{
+  margin-left: 40%;
+  margin-right: 30%;
+
+}
+.form input[type=text], select  {
+  width: 65%;
+  padding: 10px 20px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
 
 }
 
-.form{
-margin-left: 45%;
+.form input[type=email], textarea  {
+  width: 65%;
+  padding: 10px 20px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
 
+}
+
+.form input[type=button]  {
+  width: 73%;
+  padding: 10px 20px;
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  background-color: lightgreen;
+  display: block;
+
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,225,0,0.4);
+}
+
+.modal-content {
+  background-color: white;
+  border: 4px solid green;
+  margin: auto;
+  margin-top: 10%;
+  padding: 20px;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  text-align: center;
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
